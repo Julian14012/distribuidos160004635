@@ -1,13 +1,11 @@
 
-Búsqueda de Hash Multihilo en C
 
-Autor: Julian Esteban Rios Rojas-160004635
+Julian Esteban Rios Rojas-160004635
 Parcial 2 - Sistemas distrinuidos  
-Universidad de los lllanos
 
 ---
 
-## Descripción
+Descripción
 
 Este programa es un simulador de minería de hashes escrito en C.
 Su propósito es demostrar cómo varios hilos de ejecución pueden trabajar en paralelo para encontrar una combinación de caracteres que cumpla una condición específica sobre un valor hash.
@@ -16,7 +14,7 @@ El usuario define un texto base en un archivo (texto.txt) que contiene una secue
 Cada ? representa una letra desconocida que el programa intentará reemplazar por todas las combinaciones posibles de letras minúsculas (de a a z) hasta que encuentre una que genere un hash con la cantidad de ceros solicitados.
 ---
 
-## Requisitos
+Requisitos
 
 Compilador C (por ejemplo, gcc)
 
@@ -47,7 +45,6 @@ gcc main.c worker.c hash.c -lpthread -o miner
 ```
 
 ---
-
 Ejecución
 
 Ejemplo con 3 hilos:
